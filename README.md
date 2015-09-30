@@ -6,7 +6,7 @@ Campanella的前端界面
 - 使用[npm](https://github.com/npm/npm)
   或者[npm](https://github.com/npm/npm)管理js包。
 - 使用[webpack](https://github.com/webpack/webpack)打包js。
-
+- 语法使用ECMAScript6规范。js的编译使用[babel](http://babeljs.io/)。
 
 安装依赖
 ---
@@ -36,4 +36,3 @@ npm run lint
 问题
 ---
 - 很多依赖待添加。
-- 原生jsx的支持。
