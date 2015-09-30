@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import App from './components/App';
 
-class HelloWorld extends Component {
+class Root extends Component {
 
 	componentDidMount () {
 		console.log("^_^");
@@ -8,12 +9,12 @@ class HelloWorld extends Component {
 
 	render () {
 		return (
-			<h1> Hello Campanella! </h1>
+			<App />
 		);
 	}
 }
 
 React.render(
-	<HelloWorld />,
+	<Root />,
 	document.getElementById("app")
 );
