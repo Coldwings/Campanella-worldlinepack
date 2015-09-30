@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 export default class App extends Component {
-	render () {
-		return (
-			<h1>Hello Camapanella!</h1>
-		);
-	}
+  render () {
+    return (
+      <h1>Hello Camapanella!</h1>
+    );
+  }
 }
