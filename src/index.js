@@ -3,18 +3,18 @@ import App from './components/App';
 
 class Root extends Component {
 
-	componentDidMount () {
-		console.log("^_^");
-	}
+  componentDidMount () {
+    console.log("^_^");
+  }
 
-	render () {
-		return (
-			<App />
-		);
-	}
+  render () {
+    return (
+      <App />
+    );
+  }
 }
 
 React.render(
-	<Root />,
-	document.getElementById("app")
+  <Root />,
+  document.getElementById("app")
 );
