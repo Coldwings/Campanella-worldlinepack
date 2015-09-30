@@ -19,8 +19,7 @@ Dev-Server
 ```shell
 npm start
 ```
-之后访问 [localhost:3000](localhost:3000)
-在代码修改之后，保存，无需刷新浏览器就可以看到效果。
+访问 [localhost:3000](localhost:3000)
 
 编译压缩打包
 ---
@@ -36,5 +35,5 @@ npm run lint
 
 问题
 ---
-- ES6已确认，JSX未确认。
 - 很多依赖待添加。
+- 原生jsx的支持。

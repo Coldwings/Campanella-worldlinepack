@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: './src/index.es6'
+    app: './src/index.js'
   },
   output: {
     filename: '[name].min.js',
@@ -37,9 +37,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader') },
-			{ test: /\.es6$/, loader: 'babel', exclude: /node_modules/ },
-			/* TODO sth may need to transform jsx */
-			{ test: /\.jsx?$/, exclude: /node_modules/ }
+			{ test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
     ]
   },
   cssnext: {

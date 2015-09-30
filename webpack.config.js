@@ -8,7 +8,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/index.es6'
+    './src/index.js'
   ],
   output: {
     filename: 'app.js',
@@ -29,9 +29,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader') },
-			{ test: /\.es6$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
-			/* TODO sth may need to transform jsx */
-			{ test: /\.jsx?$/, loader: 'react-hot', exclude: /node_modules/ }
+			{ test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
     ]
   },
   cssnext: {
