@@ -1,0 +1,93 @@
+@import compass/reset
+@import compass/css3
+
+/* Colors */
+$silver: #bdc3c7
+$concrete: #95a5a6
+$emerland: #2ecc71
+$belizehole: #2980b9
+$cloud: #ecf0f1
+$wisteria: #8e44ad
+$midnightblue: #2c3e50
+$sunflower: #f1c40f
+$turquoise: #1abc9c
+$pomegranate: #c0392b
+
+$base-margin: 10px
+$header-height: 48px
+$font-family: Source Code Pro
+$logo-font-family: Herculanum
+
+$primary-color: $midnightblue
+$hightlight-color: $pomegranate
+$font-base-size: 18px
+$purple: purple
+
+a
+  color: $primary-color
+  font-weight: bold
+  text-decoration: none
+  +transition-property(color)
+  +transition-duration(0.75s)
+  &:hover
+    font-weight: none
+    color: $hightlight-color
+
+body
+  font-family: $font-family
+
+.clearfix
+  overflow: auto
+
+.container
+  position: fixed
+  left: 0
+  top: 0
+  height: 100vh
+  width: 100%
+  // +box-shadow(0px 10px 100px 10px rgba(0, 0, 0, 0.1) inset)
+
+.header
+  height: $header-height
+  width:  100%
+  .logo
+    line-height: $header-height
+    display: inline
+    vertical-align: bottom
+    float: left
+    margin-left: $base-margin
+    margin-top: $base-margin
+    font-size: $font-base-size + 18px
+    font-family: $logo-font-family
+    color: $purple
+  .search
+    text-align: center
+    height: $header-height
+    margin: 0 auto
+    border-bottom: 2px solid $purple
+    width: 50%
+    i
+      position: relative
+      top: 25%
+      font-size: $font-base-size + 4px
+    input
+      background-color: transparent
+      position: relative
+      top: 25%
+      width: 90%
+      margin-left: $base-margin
+      font-family: $font-family
+      font-size: $font-base-size + 4px
+      border-width: 0px
+      outline: 0
+  .profile
+    float: right
+    line-height: $header-height
+    display: inline
+    vertical-align: bottom
+    margin-right: $base-margin
+    margin-top: $base-margin
+    font-family: $font-family
+    font-size: $font-base-size + 2px
+    a
+      margin-left: $base-margin

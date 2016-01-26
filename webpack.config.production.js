@@ -38,6 +38,11 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!cssnext-loader') },
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+      { test: /\.woff(\?v=\d\.\d\.\d)?$/,   loader: "url-loader?limit=9999&mimetype=application/font-woff" },
+      { test: /\.woff2(\?v=\d\.\d\.\d)?$/,   loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.ttf(\?v=\d\.\d\.\d)?$/,    loader: "file-loader" },
+      { test: /\.svg(\?v=\d\.\d\.\d)?$/,    loader: "file-loader" },
+      { test: /\.eot(\?v=\d\.\d\.\d)?$/,    loader: "file-loader" }
     ]
   },
   cssnext: {
